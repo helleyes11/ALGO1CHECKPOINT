@@ -3,6 +3,7 @@ VAR
     ph: string;
     nbrewords =1 : integer;
     nbrevowels = 0 : integer;
+    i : integer;
 BEGIN
     Read(ph);
     IF ph[ph.length]="." THEN 
