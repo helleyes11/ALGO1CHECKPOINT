@@ -6,9 +6,9 @@ VAR
     i : integer;
 BEGIN
     Read(ph);
-    IF ph[ph.length]="." THEN 
-   FOR i FROM 0 TO ph.length do 
-   IF ph[i]=" " then 
+    IF ph[ph.length-1]="." THEN 
+   FOR i FROM 0 TO ph.length-1 do 
+   IF ph[i]=" " OR ph[i]="." THEN 
    nbrewords := nbrewords + 1;
    ELSE IF ph[i]="a" OR ph[i]="e" OR ph[i]=["i"] OR ph[i]="o" OR ph[i]="u" then
    nbrevowels := nbrevowels +1;
