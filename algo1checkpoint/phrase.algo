@@ -1,0 +1,26 @@
+ALGORITHM phrase
+VAR
+    ph: string;
+    nbrewords =1 : integer;
+    nbrevowels = 0 : integer;
+BEGIN
+    Read(ph);
+    IF ph[ph.length]="." THEN 
+   FOR i FROM 0 TO ph.length do 
+   IF ph[i]=" " then 
+   nbrewords := nbrewords + 1;
+   ELSE IF ph[i]="a" OR ph[i]="e" OR ph[i]=["i"] OR ph[i]="o" OR ph[i]="u" then
+   nbrevowels := nbrevowels +1;
+   END_IF
+   END_IF
+   Write("The length of the sentence:", ph.length)
+   Write("The number of words in the sentence :", nbrewords)
+   Write("The number of vowels in the sentence:", nbrevowels)
+
+
+   END_FOR
+   ELSE Write("enter a sentence with an ending point")
+   END_IF
+END phrase
+
+ 
